@@ -1,7 +1,8 @@
 package = "Preloader"
-version = "2.0"
+version = "scm-1"
 source = {
-	url = "http://www.tecgraf.puc-rio.br/~maia/lua/packs/luapreloader-2.0.tar.gz",
+	url = "https://github.com/renatomaia/luapreloader/archive/master.zip",
+	dir = "luapreloader-master",
 }
 description = {
 	summary = "Generator of Lua Module Pre-Loading Code.",
@@ -12,14 +13,13 @@ description = {
 		to be included in the Lua distribution, however it is primarily intended
 		to pre-compile and pre-load scripts that implement Lua modules.
 	]],
-	license = "MIT/X11",
+	license = "MIT",
 	homepage = "http://www.tecgraf.puc-rio.br/~maia/lua/preloader",
-	maintainer = "Renato Maia <maia@tecgraf.puc-rio.br>",
 }
 dependencies = {
 	"lua >= 5.1",
 	"loop >= 3.0",
-	"looplib >= 2.0beta",
+	"loopparsing >= 1.0beta",
 }
 build = {
 	type = "none",
